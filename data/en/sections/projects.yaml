@@ -21,45 +21,55 @@ buttons:
 
 # your projects
 projects:
-- name: Kubernetes
-  logo: /images/sections/projects/kubernetes.png
-  role: Contributor
-  timeline: "March 2018 - Present"
-  repo: https://github.com/kubernetes/kubernetes # If your project is a public repo on GitHub, then provide this link. it will show star count.
+- name: Ground Motion Model Repository
+  logo: /images/sections/projects/github.png
+  role: Author
+  timeline: "December 2020 - June 2022"
+  repo: https://github.com/bakerjw/GMMs # If your project is a public repo on GitHub, then provide this link. it will show star count.
   #url: ""  # If your project is not a public repo but it has a website or any external details url then provide it here. don't provide "repo" and "url" simultaneously.
-  summary: Production-Grade Container Scheduling and Management.
-  tags: ["professional", "kubernetes", "cloud"]
+  summary: I organized and validated Matlab functions for numerous ground motion models (GMMs), published in a report and GitHub repository. The report compares various functions and correlation models, documenting their use. Report available at https://purl.stanford.edu/qy113my5899. 
+  tags: ["professional", "repository", "GMMs", "Matlab"]
 
-- name: Tensorflow
-  logo: /images/sections/projects/tensorflow.png
+- name: Risk Communication
+  logo: /images/sections/projects/risk_logo.png
+  image: /images/sections/projects/risk_site2.png
+  role: Creator
+  timeline: "April - June 2023"
+  # repo: https://github.com/tensorflow/tensorflow
+  #url: ""
+  summary: Made an interactive website with videos on natural hazard risk to housing as well as preparedness and risk resources. The site is no longer active. 
+  tags: ["academic", "risk communication"]
+
+- name: Neural Networks to predict Liquefaction Potential
   role: Developer
-  timeline: "Jun 2018 - Present"
-  repo: https://github.com/tensorflow/tensorflow
+  timeline: "March - May 2024"
+  image: /images/sections/projects/nn_slide.png
+  summary: Applied machine learning to liquefaction hazard using neural networks. Achieved improved performance from Ordinary Least Squares regression. 
+  tags: ["academic","machine learning"]
+
+- name: Chilean Green Hydrogen
+  image: /images/sections/projects/greenH2.png
+  role: Team Member
+  timeline: "September - December 2022"
+  # repo: https://github.com/kelseyhightower/nocode
   #url: ""
-  summary: An Open Source Machine Learning Framework for Everyone.
-  tags: ["professional", "machine-learning"]
+  summary: Analyzed the state of Chilean green hydrogen from economic, environmental, governance, and sustainability perspectives. Worked as a group to understand the challenges and opportunities, map the actors involved, chart the feedback loops, and understand tipping points and pathways to success. 
+  tags: ["academic", "sustainability"]
 
-- name: A sample academic paper
-  role: Team Lead
-  timeline: "Jan 2017 - Nov 2017"
-  url: "https://www.example.com"
-  summary: Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente eius reprehenderit animi suscipit autem eligendi esse amet aliquid error eum. Accusantium distinctio soluta aliquid quas placeat modi suscipit eligendi nisi.
-  tags: ["academic","iot"]
+- name: Pacific Crest Trail Blog
+  # logo: /images/sections/projects/toha.png
+  # image: /images/sections/projects/toha_website.png
+  role: Author
+  timeline: "October 2025 - Present"
+  # url: ""
+  summary: After completing my thru hike of the PCT, I am writing a blog with information to others with dietary restrictions to help them plan and successfully thru hike the trail! 
+  tags: ["hobby","hiking", "writing"]
 
-- name: Nocode
-  logo: /images/sections/projects/no-code.png
-  role: Nothing
-  timeline: "Oct 2019 - Dec 2019"
-  repo: https://github.com/kelseyhightower/nocode
-  #url: ""
-  summary: The best way to write secure and reliable applications. Write nothing; deploy nowhere.
-  tags: ["hobby", "fun"]
-
-- name: Toha
-  logo: /images/sections/projects/toha.png
-  image: /images/sections/projects/toha_website.png
-  role: Owner
-  timeline: "Jun 2019 - Present"
-  repo: https://github.com/hossainemruz/toha
-  summary: A Hugo theme for personal portfolio.
-  tags: ["hobby","hugo","theme","professional"]
+- name: Hydraulic Conductivity Modeling
+  logo: /images/sections/projects/github.png
+  image: /images/sections/projects/kh_conduct_slide.png
+  role: Author
+  timeline: "December 2024 - May 2025"
+  repo: https://github.com/emongold/hydro_conduct_layers 
+  summary: I modeled hydraulic conductivity layers on a regional scale to input to groundwater simulations and improve agreement between measured and modeled groundwater depths. Details are available in Chapter 5 of my dissertation, https://purl.stanford.edu/vh476mz1269. 
+  tags: ["professional", "repository", "hydraulic conductivity", "Python"]

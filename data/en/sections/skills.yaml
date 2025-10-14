@@ -13,59 +13,70 @@ section:
 buttons:
 - name: All
   filter: "all"
-- name: Basic
-  filter: "basic"
+- name: Coding
+  filter: "coding"
+- name: Technical
+  filter: "technical"
 - name: Language
   filter: "language"
-- name: Container
-  filter: "container"
-- name: Others
-  filter: "others"
+- name: Other
+  filter: "other"
 
 # Your Skills.
 # Give a summary of you each skill in the summary section.
 skills:
-- name: Kubernetes
-  logo: /images/sections/skills/kubernetes.png
-  summary: "Capable of deploying, managing application on Kubernetes. Experienced in writing Kubernetes controllers for CRDs."
-  categories: ["container"]
-  url: "https://kubernetes.io/"
+# - name: Python and GeoPandas
+#   logo: /images/sections/skills/python.png
+#   summary: "Experienced coding in Python, specifically using geospatial packages such as GeoPandas."
+#   categories: ["coding", "geospatial"]
 
-- name: Go Development
-  logo: /images/sections/skills/go.png
-  summary: "Using as the main language for professional development. Capable of writing scalable, testable, and maintainable program."
-  categories: ["basic", "language"]
-  url: "https://golang.org/"
+- name: Geospatial Analysis
+  logo: /images/sections/skills/map.png
+  summary: "Analyze geospatial data, create visualizations and simulate subsurface characteristics."
+  categories: ["technical", "geospatial"]
+  # url: "https://golang.org/"
 
-- name: Cloud Computing
-  logo: /images/sections/skills/cloud.png
-  summary: "Worked with most of the major clouds such as GCP, AWS, Azure etc."
-  categories: ["others"]
 
-- name: Docker
-  logo: /images/sections/skills/docker.svg
-  summary: "Write most of the programs as dockerized container. Experienced with multi-stage, multi-arch build process."
-  categories: ["container"]
-  url: "https://www.docker.com/"
+- name: Hazard and Risk Analysis
+  logo: /images/sections/skills/hazard.png
+  summary: "Experience performing and teaching hazard and risk analysis concepts. Implement and calculate risk metrics. "
+  categories: ["technical"]
 
-- name: Prometheus
-  logo: /images/sections/skills/prometheus.png
-  summary: "Capable of setup, configure Prometheus metrics. Experienced with PromQL, AlertManager. Also, experienced with writing metric exporters."
-  categories: ["basic"]
-  url: "https://prometheus.io/"
+- name: Collaboration
+  # logo: /images/sections/skills/prometheus.png
+  summary: "Passionate collborator, experienced at mentorship, conflict resolution, and 'managing up.'"
+  categories: ["other"]
 
-- name: Linux
-  logo: /images/sections/skills/linux.png
-  summary: "Using as the main operating system. Capable of writing bash/shell scripts."
-  categories: ["others"]
+- name: HPC Computing
+  logo: /images/sections/skills/cloud.png  ## or linux.png?
+  summary: "Experience remote computing on a high performance cluster. Capable of writing bash/shell scripts."
+  categories: ["coding"]
 
 - name: Git
   logo: /images/sections/skills/git.png
-  summary: "Experienced with git-based development. Mostly, use Github. Also, have experience in working with GitLab."
-  categories: ["basic"]
-  url: "https://git-scm.com/"
+  summary: "Experienced with git-based development. Mostly, use Github."
+  categories: ["coding"]
+  # url: "https://git-scm.com/"
 
-- name: C++
-  logo: /images/sections/skills/c++.png
-  summary: "Know basic C/C++ programming. Used for contest programming and problem solving."
-  categories: ["basic", "language"]
+- name: Python and GeoPandas
+  logo: /images/sections/skills/python.png
+  summary: "Know basic Python programming. Specialized in geospatial packages including GeoPandas."
+  categories: ["coding", "geospatial"]
+
+- name: Facilitation
+  # logo: /images/sections/skills/c++.png
+  summary: "Trained and practiced at facilitating group discussions in technical, design thinking, and social justice contexts."
+  categories: ["other"]
+
+- name: Teaching
+  # logo: /images/sections/skills/c++.png
+  summary: "Experience teaching as a teaching assistant, lecturing, organizing seminars, and in informal contexts."
+  categories: ["other"]
+
+- name: Spanish
+  summary: "Understand Spanish at an intermediate level, reading and writing. Spanish minor in undergrad and studied abroad in Salamanca, Spain."
+  categories: ["language"]
+
+- name: Hungarian
+  summary: "Understand Hungarian at a beginner level. Actively learning Hungarian for personal reasons. "
+  categories: ["language"]

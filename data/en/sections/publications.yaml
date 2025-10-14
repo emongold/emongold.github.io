@@ -12,71 +12,103 @@ section:
 buttons:
 - name: All
   filter: "all"
-- name: "Machine Learning"
-  filter: "machinelearning"
-- name: "Image Processing"
-  filter: "image-processing"
-- name: Security
-  filter: "security"
+- name: "Hazard and Risk"
+  filter: "hazrisk"
+- name: "Climate"
+  filter: "climate"
+- name: "Response and Recovery"
+  filter: "res-rec"
 
 # your publications
 publications:
-- title: An Example Paper on Machine Learning
+- title: "Quantifying Climate Change Risk through Natural Hazard Losses to Inform Adaptation Action"
   publishedIn:
-    name: 2020 IEEE Region Symposium (TENSYMP)
-    date: 7 June 2020
-    url: https://example.com
+    name: Climatic Change
+    date: 14 April 2025
+    url: https://link.springer.com/journal/10584
   authors:
-  - name: Dr. Madman
-    url: https://example.com
-  - name: Dr. Lessmad
-    url: https://example.com
-  - name: Dr. Moremad
-    url: https://example.com
-  - name: Dr. Goodman
-    url: https://example.com
+  - name: Emily Mongold
+  - name: Jack W. Baker
+    url: https://jackwbaker.com
   paper:
-    summary: Voluptate in id id voluptate laboris. Minim mollit aliquip sit aliqua ut exercitation voluptate eiusmod consequat pariatur sunt enim veniam. Velit esse tempor laboris anim tempor officia. Magna non labore duis do esse sit do ipsum culpa. Officia consequat id non duis culpa dolor. Excepteur magna non nostrud cupidatat aute aliqua aliquip.
-    url: https://example.com
-  categories: ["machinelearning","image-processing"]
-  tags: ["Machine Learning", "Autonomous Driving", "Computer Vision"]
+    summary: "Climate change is expected to increase the frequency and severity of many natural hazards. In particular, coastal communities are often exposed to multiple hazards, exacerbated by climate change. We present a methodology to quantify the increase in multi-hazard risk due to climate change. The methodology includes a probabilistic description of independent hazard pathways, defined as sets of individual and cascading hazards that are statistically independent, run for multiple levels of climate change impact. We also quantify the risk reduction from adaptation actions. The approach integrates probabilistic hazard analysis and loss assessment. With this approach, we identify the hazards contributing most to risk under multiple amounts of climate change. This methodology is applied to a case study of residential housing in Alameda, California, USA, considering how sea level rise impacts multiple hazards: earthquakes, coastal flooding, and tsunamis. For the case study location, we identify that the highest annualized risk shifts from earthquakes to coastal flooding as sea levels rise. We assess how different adaptation actions would reduce the risk today and under sea level rise, highlighting the need to consider frequent and infrequent losses."
+    url: https://link.springer.com/article/10.1007/s10584-025-03927-2
+  categories: ["hazrisk", "climate"]
+  tags: ["Hazard Risk", "Climate Change", "Adaptation"]
 
-- title: An Sample Paper on Image Processing
+- title: "Probabilistic Regional Liquefaction Hazard and Risk Analysis: A Case Study of Residential Buildings in Alameda, California"
   publishedIn:
-    name: 2020 IEEE Region Symposium (TENSYMP)
-    date: 7 June 2020
-    url: https://example.com
+    name: Natural Hazards Review
+    date: 22 August 2024
+    url: https://ascelibrary.org/journal/nhrefo
   authors:
-  - name: Dr. Madman
-    url: https://example.com
-  - name: Dr. Lessmad
-    url: https://example.com
-  - name: Dr. Moremad
-    url: https://example.com
-  - name: Dr. Goodman
-    url: https://example.com
+  - name: Emily Mongold
+  - name: Jack W. Baker
+    url: https://jackwbaker.com
   paper:
-    summary: Ullamco magna minim cupidatat Lorem ea ex aliqua fugiat et. Dolor quis cillum ea duis irure et commodo aliquip consectetur ullamco labore ut anim nisi. Commodo reprehenderit est consectetur tempor adipisicing occaecat exercitation amet do aliquip dolor do irure. Labore officia ut magna pariatur reprehenderit et ex sit sunt. Magna proident ullamco adipisicing sit.
-    url: https://example.com
-  categories: ["image-processing"]
-  tags: ["Image Processing", "Computer Vision"]
+    summary: "The impact of liquefaction on a regional scale is not well understood or modeled with traditional approaches. This paper presents a method to quantitatively assess liquefaction hazard and risk on a regional scale, accounting for uncertainties in soil properties, groundwater conditions, ground-shaking parameters, and empirical liquefaction potential index equations. The regional analysis is applied to a case study to calculate regional occurrence rates for the extent and severity of liquefaction and to quantify losses resulting from ground shaking and liquefaction damage to residential buildings. We present a regional-scale metric to quantify the extent and severity of liquefaction. A sensitivity analysis on epistemic uncertainty indicates that the two most important factors on output liquefaction maps are the empirical liquefaction equation, emphasizing the necessity of incorporating multiple equations in future regional studies, and the ground motion model, highlighting the same necessity for the peak ground acceleration input. Furthermore, the disaggregation of seismic sources reveals that triggering earthquakes for various extents of liquefaction originate from multiple sources, though primarily nearby faults and large magnitude ruptures. This finding indicates the value of adopting regional probabilistic analysis in future studies to capture the diverse sources and spatial distribution of liquefaction."
+    url: https://doi.org/10.1061/NHREFO.NHENG-2078
+  categories: ["hazrisk"]
+  tags: ["Hazard Risk", "Liquefaction"]
 
-- title: An Example Paper on Security
+- title: "Modeling post-disaster recovery: Accounting for rental and multi-family housing"
   publishedIn:
-    name: 2020 IEEE Region Symposium (TENSYMP)
-    date: 7 June 2020
-    url: https://example.com
+    name: Earthquake Spectra
+    date: May 2024
+    url: https://journals.sagepub.com/home/EQS
   authors:
-  - name: Dr. Madman
-    url: https://example.com
-  - name: Dr. Lessmad
-    url: https://example.com
-  - name: Dr. Moremad
-    url: https://example.com
-  - name: Dr. Goodman
-    url: https://example.com
+  - name: Emily Mongold
+    # url: https://example.com
+  - name: Rodrigo Costa
+    url: https://uwaterloo.ca/systems-design-engineering/profile/r2costa
+  - name: Adam Zsarnoczay
+    url: https://www.linkedin.com/in/zsarnoczay/
+  - name: Jack W. Baker
+    url: https://jackwbaker.com
   paper:
-    summary: Dolor ad cupidatat pariatur nulla ipsum ex ullamco nisi anim ullamco. Dolore elit esse in exercitation minim aliqua. Amet velit incididunt magna laboris. Proident reprehenderit deserunt ad officia duis dolor. Tempor nostrud ullamco ullamco sint deserunt cupidatat irure minim consectetur nulla adipisicing sunt.
-    url: https://example.com
-  categories: ["security"]
-  tags: ["Machine Learning", "Autonomous Driving", "Machine Vision"]
+    summary: "Post-disaster housing recovery models increase our understanding of recovery dynamics, vulnerable populations, and how people are affected by the direct losses that disasters create. Past recovery models have focused on single-family owner-occupied housing, while empirical evidence shows that rental units and multi-family housing are disadvantaged in post-disaster recovery. To fill this gap, this article presents an agent-based housing recovery model that includes the four common type-tenure combinations of single- and multi-family owner- and renter-occupied housing. The proposed model accounts for the different recovery processes, emphasizing funding sources available to each type–tenure. The outputs of our model include the timing of financing and recovery at building resolution across a community. We demonstrate the model with a case study of Alameda, California, recovering from a simulated M7.0 earthquake on the Hayward fault. The processes in the model replicate higher non-recovery of multi-family housing than single-family housing, as observed in past disasters, and a heavy reliance of single-family renter-occupied units on Small Business Administration funding, which is expected due to low earthquake insurance penetration. The simulation results indicate that multi-family housing would have the highest portion of unmet need remaining; however, some buildings with unmet needs are anticipated to be able to obtain a large portion of their funding. The remaining portion may be filled using personal financing or may be overcome with downsizing or downgrades. Multi-family housing would also benefit the most from Community Development Block Grants for Disaster Recovery (CDBG-DR). This benefit is a result of modeling the financing sources, that CDBG-DR is available, and that many multi-family buildings do not qualify for other sources. Communities’ allocation of public funding is important for housing recovery. Our model can help inform and compare potential financing policies to allocate public funds." 
+    url: https://doi.org/10.1177/87552930231222769
+  categories: ["res-rec","hazrisk"]
+  tags: ["Recovery", "Hazard Risk", "Equity"]
+
+- title: "Hurricane Evacuation beliefs and behavior of inland vs. coastal populations."
+  publishedIn:
+    name: Environmental Hazards
+    date: October 2020
+    url: https://www.tandfonline.com/journals/tenh20
+  authors:
+  - name: Emily Mongold
+  - name: Rachel Davidson
+    url: https://ccee.udel.edu/faculty/rachel-davidson/
+  - name: Jennifer Trivedi
+    # url: https://uwaterloo.ca/systems-design-engineering/profile/r2costa
+  - name: Sarah DeYoung
+    # url: https://www.linkedin.com/in/zsarnoczay/
+  - name: Tricia Wachtendorf
+    # url: https://jackwbaker.com
+  - name: Prosper Anyidoho
+  paper:
+    summary: "Although hurricanes can cause severe hazard effects well inland, little is known about the evacuation behaviour of inland populations compared to coastal populations. Using survey data collected in the United States after Hurricanes Florence (2018), Michael (2018), Barry (2019), and Dorian (2019), we investigate differences between coastal and inland populations in evacuation decisions and timing, and their causes. The data indicate that coastal populations evacuated at a higher rate than their inland counterparts (those not in coastal counties) in every hurricane studied. Chi-square tests identified differences in characteristics of coastal and inland populations, and a multiple logistic regression identified variables associated with evacuation. Together they suggest multiple factors that help explain the difference in evacuation rates. The most significant findings were related to geographic differences in the issuance of evacuation orders and reported receiving of orders (whether or not orders were actually issued). Most interestingly, the analysis indicates that variance between inland and coastal evacuation is not fully explained by the factors suggested in existing literature. We suggest here that differences between inland and coastal evacuation may also result from risk perception, in particular, a view that hurricanes are a coastal phenomenon and therefore do not apply to inland populations."
+    url: https://doi.org/10.1177/87552930231222769
+  categories: ["res-rec","hazrisk"]
+  tags: ["Response", "Hazard Risk", "Evacuation Behavior"]
+
+- title: "Undergraduate Research Experience (REU) NHERI 2019: Assessing Structural Damages during Hurricane Michael of Low-Rise, Large-Volume Steel Structures using Structure-from-Motion and LiDAR."
+  publishedIn:
+    name: DesignSafe- CI
+    date: 28 August 2019
+    url: https://www.designsafe-ci.org/
+  authors:
+  - name: Emily Mongold
+    # url: https://example.com
+  - name: Jeffrey Berman
+    # url: https://uwaterloo.ca/systems-design-engineering/profile/r2costa
+  - name: Laura Lowes
+    # url: https://www.linkedin.com/in/zsarnoczay/
+  - name: Joseph Wartman
+    # url: https://jackwbaker.com
+  paper:
+    summary: "Generation of three-dimensional models of damaged low-rise large-volume steel structures using Structure-from-Motion and light detecting and ranging technology. This project compares the different ways to create a point cloud and analyzes the accuracy of each method. The results from this project can be used to optimize future data collection and processing."
+    url: https://doi.org/10.17603/ds2-bwat-jk23  # https://www.designsafe-ci.org/data/browser/public/designsafe.storage.published/PRJ-2522
+  categories: ["res-rec","hazrisk"]
+  tags: ["Response", "Hazard Risk", "Structure-from-Motion"]

@@ -10,95 +10,124 @@ section:
   # hideTitle: true
 
 degrees:
-- name: Ph.D in Quantum Cryptography
-  icon: fa-microscope
-  timeframe: 2016-2020
+- name: Ph.D in Civil Engineering
+  icon: fa-university    #fa-microscope
+  timeframe: 2020-2025
   institution:
-    name: ABC University of Technology
-    url: "#"
-    logo: /images/sections/education/tech_college.png
+    name: Stanford University
+    url: "https://www.stanford.edu/"
+    logo: images/sections/education/stanford_logo.avif  # "\assets\images\sections\education\stanford_logo.avif"
     # Can optionally show a different logo for dark theme
     # darkLogo: /images/sections/education/tech_college.png
-  grade: #(optional)
-    scale: CGPA
-    achieved: 3.6
-    outOf: 4
+
   publications: #(optional)
-  - title: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    url: "#"
-  - title: Fusce eu augue ut odio porttitor pulvinar.
-    url: "#"
-  - title: Nullam vitae orci tincidunt purus viverra pulvinar.
-    url: "#"
-- name: B.Sc. in Computer Science & Engineering
-  icon: fa-graduation-cap
-  timeframe: 2012-2016
-  institution:
-    name: University of XYZ
-    url: "#"
-    logo: /images/sections/education/university.jpg
-    # Can optionally show a different logo for dark theme
-    # darkLogo: /images/sections/education/university.jpg
-  grade: #(optional)
-    scale: CGPA
-    achieved: 3.5
-    outOf: 4
+  - title: 'Modeling post-disaster recovery: Accounting for rental and multi-family housing'
+    url: "https://doi.org/10.1177/87552930231222769"
+  - title: 'Probabilistic regional liquefaction hazard and risk analysis: a case study of residential buildings in Alameda, California'
+    url: "https://doi.org/10.1061/NHREFO.NHENG-2078"
+  - title: Quantifying climate change risk through natural hazard losses to inform adaptation action
+    url: "https://doi.org/10.1007/s10584-025-03927-2"
+
+  taughtCourses:
+    showGrades: false
+    collapseAfter: 2
+    courses:
+      - name: "CEE 296: Regional Seismic Risk Analysis and Risk Management"
+      - name: "CEE 288: Seismic Hazard and Risk Analysis"
+      - name: "CEE 200: Seminar on Teaching for TAs"
+      - name: "CEE 200ABC: Teaching of Civil and Environmental Engineering"
+      - name: "CEE 308: Topics in Disaster Resilience Research"
+      - name: "CEE 209S: Disaster and Climate Resilience Seminar"
+    
   takenCourses: #(optional)
     # if true, the courses will be rendered as a table otherwise it will render as a list and the grades will be hidden.
-    showGrades: true
+    showGrades: false
     collapseAfter: 3
     courses:
-    - name: Data Structures and Algorithm
-      achieved: 3.75
-      outOf: 4
-    - name: Network Security
-      achieved: 3.80
-      outOf: 4
-    - name: Operating System
-      achieved: 3.5
-      outOf: 4
-    - name: Artificial Intelligent
-      achieved: 3.75
-      outOf: 4
-  publications: #(optional)
-  - title: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    url: "#"
-  - title: Fusce eu augue ut odio porttitor pulvinar.
-    url: "#"
-  extracurricularActivities: #(optional)
-  - In vitae facilisis est, eget porta sem.
-  - Vestibulum consectetur lorem justo, at laoreet lorem feugiat et.
-  - Duis sed massa feugiat, ornare justo et, aliquam est.
-  - Pellentesque ut fringilla magna.
+    - name: Data Science for Geoscience
+      # achieved: 3.75
+      # outOf: 4
+    - name: Creativity in Research Scholars
+    - name: 'Pursuing Sustainability: Managing Complex Social-Environmental Systems'
+    - name: Questionnaire Design for Surveys and Laboratory Experiments
+
   customSections: #(optional)
     - name: Thesis
-      content: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    - name: Supervisor
-      content: Fusce eu augue ut odio porttitor pulvinar.
-- name: Higher Secondary School Certificate
-  icon: fa-university
-  timeframe: 2010-2012
+      content: "Regional models for coastal climate risk assessment: subsurface, multi-hazard, and risk reduction perspectives"
+    - name: Advisor
+      content: Jack W. Baker
+
+
+
+- name: M.S. in Structural Engineering
+  icon: fa-graduation-cap
+  timeframe: 2020-2022
   institution:
-    name: MST College of Science
-    url: "#"
-    logo: /images/sections/education/science_college.png
+    name: Stanford University
+    url: "https://www.stanford.edu/"
+    logo: images/sections/education/stanford_logo.avif
     # Can optionally show a different logo for dark theme
     # darkLogo: /images/sections/education/science_college.png
-  grade: #(optional)
-    scale: GPA
-    achieved: 5
-    outOf: 5
-  extracurricularActivities: #(optional)
-  - In vitae facilisis est, eget porta sem.
-  - Vestibulum consectetur lorem justo, at laoreet lorem feugiat et.
-  - Duis sed massa feugiat, ornare justo et, aliquam est.
-  - Pellentesque ut fringilla magna.
-- name: Secondary School Certificate
-  icon: fa-school
-  timeframe: 2005-2010
+  # grade: #(optional)
+  #   scale: GPA
+  #   achieved: 5
+  #   outOf: 5
+  takenCourses: #(optional)
+    # if true, the courses will be rendered as a table otherwise it will render as a list and the grades will be hidden.
+    showGrades: false
+    collapseAfter: 3
+    courses:
+    - name: Materials for Sustainable Built Environments
+      # achieved: 3.75
+      # outOf: 4
+    - name: Introduction to Performance Based Earthquake Engineering
+    - name: Regional Seismic Risk Analysis and Risk Management
+    - name: Coastal Ocean Modeling
+    - name: Hydrodynamics
+    - name: Data Analytics for Urban Systems
+    - name: Stochastic Hydrology
+    - name: Climate Models and Data
+    - name: Quantifying Uncertainty in Subsurface Systems
+
+
+
+- name: B.C.E in Civil Engineering
+  icon: fa-university
+  timeframe: 2016-2020
   institution:
-    name: JK School of Science
-  grade: #(optional)
-    scale: GPA
-    achieved: 4.5
-    outOf: 5
+    name: University of Delaware
+    url: "https://www.udel.edu/"
+    logo: images/sections/education/ud_logo2.png
+    # Can optionally show a different logo for dark theme
+    # darkLogo: /images/sections/education/university.jpg
+  # grade: #(optional)
+  #   scale: CGPA
+  #   achieved: 3.5
+  #   outOf: 4
+  takenCourses: #(optional)
+    # if true, the courses will be rendered as a table otherwise it will render as a list and the grades will be hidden.
+    showGrades: false
+    collapseAfter: 3
+    courses:
+    - name: Introduction to Sustainable Principles
+      # achieved: 3.75
+      # outOf: 4
+    - name: Disasters, Vulnerability, and Development
+    - name: Water Resources Engineering
+    - name: Wildlife Conservation and Ecology
+
+  publications: #(optional)
+  - title: Hurricane evacuation beliefs and behaviour of inland vs. coastal populations
+    url: "https://doi.org/10.1080/17477891.2020.1829531"
+  extracurricularActivities: #(optional)
+  - University of Delaware Alternative Breaks
+  - Alpha Omega Epsilon (Engineering Sorority), Community Service Chair
+  - University of Delaware Figure Skating Team
+  - Down to Earth Food Cooperative
+  customSections: #(optional)
+    - name: Honors Thesis
+      content: Coastal versus Inland Hurricane Evacuation Behavior Analysis
+    - name: Advisor
+      content: Rachel Davidson
+
+

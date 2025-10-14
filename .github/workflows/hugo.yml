@@ -1,21 +1,26 @@
-# .github/workflows/hugo.yml
-name: Build and Deploy Hugo site
+name: Build and Deploy Hugo (Pages)
 
 on:
   push:
     branches: [ main ]   # change if your default branch is different
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
 
 jobs:
   build:
     runs-on: ubuntu-latest
     env:
       HUGO_VERSION: 0.151.0
-      HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        with:
-          submodules: false   # Toha v4 uses modules, not submodules
 
       - name: Setup Hugo (extended)
         uses: peaceiris/actions-hugo@v2
@@ -23,24 +28,34 @@ jobs:
           hugo-version: ${{ env.HUGO_VERSION }}
           extended: true
 
-      - name: Show Hugo version (sanity check)
+      - name: Show Hugo version
         run: hugo version
 
-      - name: Bust Hugo caches (avoid stale modules)
+      - name: Clean caches & vendor
         run: |
-          rm -rf "$HOME/.cache/hugo" "$HOME/.cache/hugo_mod" "$HUGO_CACHEDIR" _vendor
+          rm -rf "$HOME/.cache/hugo" "$HOME/.cache/hugo_mod" _vendor
 
-      - name: Tidy modules
+      - name: Resolve modules
         run: |
           hugo mod clean
           hugo mod get -u
           hugo mod tidy
 
-      - name: Build
+      - name: Build site
         run: hugo --minify --gc
 
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
+          path: ./public
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

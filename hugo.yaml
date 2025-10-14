@@ -307,3 +307,6 @@ params:
     # Show/hide disclaimer notice in the footer. Default is "false".
     disclaimer:
       enable: false
+caches:
+  images:
+    dir: :cacheDir/images

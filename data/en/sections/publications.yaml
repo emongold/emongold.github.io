@@ -28,6 +28,7 @@ publications:
     url: https://link.springer.com/journal/10584
   authors:
   - name: Emily Mongold
+    url: https://emilymongold.com
   - name: Jack W. Baker
     url: https://jackwbaker.com
   paper:
@@ -43,6 +44,7 @@ publications:
     url: https://ascelibrary.org/journal/nhrefo
   authors:
   - name: Emily Mongold
+    url: https://emilymongold.com
   - name: Jack W. Baker
     url: https://jackwbaker.com
   paper:
@@ -58,7 +60,7 @@ publications:
     url: https://journals.sagepub.com/home/EQS
   authors:
   - name: Emily Mongold
-    # url: https://example.com
+    url: https://emilymongold.com
   - name: Rodrigo Costa
     url: https://uwaterloo.ca/systems-design-engineering/profile/r2costa
   - name: Adam Zsarnoczay
@@ -78,14 +80,15 @@ publications:
     url: https://www.tandfonline.com/journals/tenh20
   authors:
   - name: Emily Mongold
+    url: https://emilymongold.com
   - name: Rachel Davidson
     url: https://ccee.udel.edu/faculty/rachel-davidson/
   - name: Jennifer Trivedi
-    # url: https://uwaterloo.ca/systems-design-engineering/profile/r2costa
+    url: https://www.udel.edu/academics/colleges/cas/units/departments/anthropology/our-people/jennifer-trivedi/
   - name: Sarah DeYoung
-    # url: https://www.linkedin.com/in/zsarnoczay/
+    url: https://www.udel.edu/academics/colleges/cas/units/departments/sociology-and-criminal-justice/our-people/sarah-deyoung/
   - name: Tricia Wachtendorf
-    # url: https://jackwbaker.com
+    url: https://www.udel.edu/academics/colleges/cas/units/departments/sociology-and-criminal-justice/our-people/tricia-wachtendorf/
   - name: Prosper Anyidoho
   paper:
     summary: "Although hurricanes can cause severe hazard effects well inland, little is known about the evacuation behaviour of inland populations compared to coastal populations. Using survey data collected in the United States after Hurricanes Florence (2018), Michael (2018), Barry (2019), and Dorian (2019), we investigate differences between coastal and inland populations in evacuation decisions and timing, and their causes. The data indicate that coastal populations evacuated at a higher rate than their inland counterparts (those not in coastal counties) in every hurricane studied. Chi-square tests identified differences in characteristics of coastal and inland populations, and a multiple logistic regression identified variables associated with evacuation. Together they suggest multiple factors that help explain the difference in evacuation rates. The most significant findings were related to geographic differences in the issuance of evacuation orders and reported receiving of orders (whether or not orders were actually issued). Most interestingly, the analysis indicates that variance between inland and coastal evacuation is not fully explained by the factors suggested in existing literature. We suggest here that differences between inland and coastal evacuation may also result from risk perception, in particular, a view that hurricanes are a coastal phenomenon and therefore do not apply to inland populations."
@@ -100,13 +103,13 @@ publications:
     url: https://www.designsafe-ci.org/
   authors:
   - name: Emily Mongold
-    # url: https://example.com
+    url: https://emilymongold.com
   - name: Jeffrey Berman
-    # url: https://uwaterloo.ca/systems-design-engineering/profile/r2costa
+    url: https://www.ce.washington.edu/facultyfinder/jeffrey-w-berman
   - name: Laura Lowes
-    # url: https://www.linkedin.com/in/zsarnoczay/
+    url: https://www.ce.washington.edu/facultyfinder/laura-n-lowes
   - name: Joseph Wartman
-    # url: https://jackwbaker.com
+    url: https://www.ce.washington.edu/facultyfinder/joseph-wartman
   paper:
     summary: "Generation of three-dimensional models of damaged low-rise large-volume steel structures using Structure-from-Motion and light detecting and ranging technology. This project compares the different ways to create a point cloud and analyzes the accuracy of each method. The results from this project can be used to optimize future data collection and processing."
     url: https://doi.org/10.17603/ds2-bwat-jk23  # https://www.designsafe-ci.org/data/browser/public/designsafe.storage.published/PRJ-2522

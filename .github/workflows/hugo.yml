@@ -1,9 +1,8 @@
-# .github/workflows/hugo.yml
 name: Build and Deploy Hugo (Pages)
 
 on:
   push:
-    branches: [ main ]
+    branches: [ main ]   # change if your default branch is different
 
 permissions:
   contents: read
@@ -13,13 +12,13 @@ permissions:
 concurrency:
   group: "pages"
   cancel-in-progress: true
+  cancel-in-progress: true
 
 jobs:
   build:
     runs-on: ubuntu-latest
     env:
       HUGO_VERSION: 0.151.0
-      HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -33,29 +32,15 @@ jobs:
       - name: Show Hugo version
         run: hugo version
 
-      - name: Setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-          cache: 'npm'
-
-      - name: Clean caches
+      - name: Clean caches & vendor
         run: |
-          rm -rf "$HOME/.cache/hugo" "$HOME/.cache/hugo_mod" "$HUGO_CACHEDIR" _vendor
+          rm -rf "$HOME/.cache/hugo" "$HOME/.cache/hugo_mod" _vendor
 
-      - name: Resolve Hugo Modules
+      - name: Resolve modules
         run: |
           hugo mod clean
           hugo mod get -u
           hugo mod tidy
-
-      - name: Prepare npm deps from modules
-        run: |
-          hugo mod npm pack || true
-          test -f package.json || echo '{"private":true,"devDependencies":{"bootstrap":"^4.6.2","popper.js":"^1.16.1","@fortawesome/fontawesome-free":"^6.5.2","feather-icons":"^4.29.2","mermaid":"^10.9.1","highlight.js":"^11.9.0","plyr":"^3.7.8","ityped":"^1.0.3","imagesloaded":"^5.0.0","fuse.js":"^6.6.2","mark.js":"^8.11.1","filterizr":"^2.2.4"}}' > package.json
-
-      - name: Install npm deps
-        run: npm ci
 
       - name: Build site
         run: hugo --minify --gc

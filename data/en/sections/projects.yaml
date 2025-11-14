@@ -61,7 +61,7 @@ projects:
   # image: /images/sections/projects/toha_website.png
   role: Author
   timeline: "October 2025 - Present"
-  # url: ""
+  url: "https://medium.com/@elm.art7"
   summary: After completing my thru hike of the PCT, I am writing a blog with information to others with dietary restrictions to help them plan and successfully thru hike the trail! 
   tags: ["hobby","hiking", "writing"]
 
